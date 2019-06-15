@@ -1,0 +1,21 @@
+Package: bnsens
+Type: Package
+Title: One-way single distribution sensitivity analysis for discrete data in Bayesian networks
+Version: 0.1.0
+Author: Ramanathan Ramsiya
+Maintainer: Ramanathan Ramsiya <2420064R@student.gla.ac.uk>
+Description: Tools for one-way single distribution sensitivity analysis on discrete variables
+    Bayesian networks. Performs uniform, proportional, order-preserving covariation schemes.
+    Performs CD-distance and Kullback-Leibler divergence for updating Bayesian network.
+    Performs sensitivity function for probability of interest after update of network parameter.
+License: Unlimited
+Copyright: Ramanathan Ramsiya
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    bnlearn,
+    gRain,
+    graphics,
+    gRbase
+Depends: R (>= 2.10)
+RoxygenNote: 6.1.1
