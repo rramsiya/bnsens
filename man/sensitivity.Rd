@@ -48,4 +48,7 @@ and the probabilistic query of interest is:\cr
 \cr
  P ( \code{interest_node} = \code{interest_node_value} | \code{evidence_nodes} = \code{evidence_states} ) \cr
 }
+\seealso{
+Other sensitivity: \code{\link{sensquery}}
+}
 \concept{sensitivity}
