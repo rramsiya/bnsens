@@ -6,7 +6,7 @@ Author: Ramanathan Ramsiya
 Maintainer: Ramanathan Ramsiya <2420064R@student.gla.ac.uk>
 Description: Tools for one-way single distribution sensitivity analysis on discrete variables
     Bayesian networks. Performs uniform, proportional, order-preserving covariation schemes.
-    Performs CD-distance and Kullback-Leibner divergence for updating Bayesian network.
+    Performs CD-distance and Kullback-Leibler divergence for updating Bayesian network.
     Performs sensitivity function for probability of interest after update of network parameter.
 License: ??
 Copyright: ??
