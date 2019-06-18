@@ -33,8 +33,12 @@ The available dissimilarity measures are:
 }
 }
 
-\section{Sensitivity function}{
+\section{Sensitivity functions}{
 
-The sensitivity function (\code{\link{sensitivity}}) explains a probability query of interest in terms of a parameter change.
+The available function for sensitivity analysis are:
+ \itemize{
+  \item \emph{Sensitivity function} (\code{\link{sensitivity}}): returns a certain probability of interest given a parameter change. Evidence can be considered.
+  \item \emph{Sensitivity query ????} (\code{\link{sensquery}}): returns the parameter changes needed to get a certain probability of interest. Evidence can be considered.
+}
 }
 
