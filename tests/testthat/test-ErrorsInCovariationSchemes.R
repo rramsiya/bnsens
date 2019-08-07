@@ -1,7 +1,7 @@
 context("Errors in covariation schemes")
 library(bnsens)
 
-data<-data("travel")
+data("travel")
 
 test_that("error when invalid node name", {
   expect_error(uniform_covar(bnfit = travel,node = "t",value_node = "car",value_parents = c("emp","big"),new_value = 0.65),"Invalid input for node")

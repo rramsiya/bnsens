@@ -1,7 +1,7 @@
 context("Errors in dissimilarity measures (CD_distance and KL)")
 library(bnsens)
 
-data<-data("travel")
+data("travel")
 
 test_that("error/warning with order preserving scheme", {
   expect_error(CD_distance(bnfit = travel,node = "T",value_node = "car",value_parents = c("emp","big"),new_value = "all",covariation = "orderp"))

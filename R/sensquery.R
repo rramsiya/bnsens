@@ -29,6 +29,14 @@ sensquery <- function(bnfit,
                       new_value,
                       evidence_nodes = NULL,
                       evidence_states = NULL) {
+  if (!(interest_node %in% names(bnfit))) {
+    stop("Invalid input for interest_node")
+  }
+  if(!is.null(evidence_nodes)){
+    if (any(!(evidence_nodes %in% names(bnfit)))) {
+      stop("Invalid input for evidence_nodes")
+    }
+  }
   query <- data.frame()
   for (i in 1:length(nodes(bnfit))) {
     original <-

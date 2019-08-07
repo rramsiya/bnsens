@@ -51,6 +51,14 @@ sensitivity <- function(bnfit,
                         plot = TRUE,
                         ...)
 {
+  if (!(interest_node %in% names(bnfit))) {
+    stop("Invalid input for interest_node")
+  }
+  if(!is.null(evidence_nodes)){
+    if (any(!(evidence_nodes %in% names(bnfit)))) {
+      stop("Invalid input for evidence_nodes")
+    }
+  }
   suppressWarnings(if (new_value == "all") {
     new_value2 <-
       sort(c(seq(0.05, 0.95, by = 0.05), coef(bnfit[[node]])[t(append(value_node, value_parents))]))
