@@ -1,7 +1,14 @@
-context("Errors in covariation schemes")
+context("Covariation schemes")
 library(bnsens)
 
 data("travel")
+
+test_that("Correct class",{
+  expect_that(uniform_covar(bnfit = travel,node = "T",value_node = "car",value_parents = c("emp","big"),new_value = 0.65),is_a(c("bn.fit")))
+  expect_that(proportional_covar(bnfit = travel,node = "T",value_node = "car",value_parents = c("emp","big"),new_value = 0.65),is_a(c("bn.fit")))
+  expect_that(orderp_covar(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = 0.3),is_a(c("bn.fit")))
+  expect_true(is.na(orderp_covar(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = 0.65)))
+  })
 
 test_that("error when invalid node name", {
   expect_error(uniform_covar(bnfit = travel,node = "t",value_node = "car",value_parents = c("emp","big"),new_value = 0.65),"Invalid input for node")
