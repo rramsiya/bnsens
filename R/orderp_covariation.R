@@ -16,7 +16,7 @@
 #'@param bnfit object of class bn.fit
 #'@param node character string. Node of which the conditional probability distribution is being changed.
 #'@param value_node character string. Level of \code{node}.
-#'@param value_parents character string. Levels of \code{node}'s parents. The levels should be defined for the parents in the order found in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.
+#'@param value_parents character string. Levels of \code{node}'s parents. The levels should be defined according to the order of the parents in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.
 #'@param new_value numeric value between 0 and 1. Value to which the parameter should be updated.
 #'
 

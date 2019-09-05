@@ -15,7 +15,7 @@
 #'@param bnfit object of class bn.fit
 #'@param interest_node character string. Node of the probability query of interest.
 #'@param interest_node_value character string. Level of \code{interest_node}
-#'@param new_value numeric vector with elements between 0 and 1. Values to which the probability is updated updated.
+#'@param new_value numeric value between 0 and 1. Value of the probability of interest.
 #'@param evidence_nodes character string. Evidence nodes. If \code{NULL} no evidence is considerated. Set by default to \code{NULL}.
 #'@param evidence_states character string. Levels of \code{evidence_nodes}. If \code{NULL} no evidence is considerated. If \code{evidence_nodes="NULL"}, \code{evidence_states} should be set to \code{NULL}. Set by default to \code{NULL}.
 

@@ -3,16 +3,17 @@
 #' The package performs one-way sensitivity analysis for discrete Bayesian networks.
 #'
 #' @details
-#' It provides three categories of functions:covariation schemes, dissimilarity measures and sensitivity function.
+#' It provides three categories of functions:covariation schemes, dissimilarity measures and sensitivity related functions.\cr
 #' The co-variation schemes available are uniform-covariation scheme, proportional co-variation scheme and order-preserving co-variation scheme.\cr
-#' The dissimilarity measures available are Chan-Darwiche distance and the Kullback-Leibler divergence.
+#' The dissimilarity measures available are the Chan-Darwiche distance and the Kullback-Leibler divergence. The available sensitivity related functions are the standard sensitivity function and sensquery, a new function 
+#' which allows to determine the parameter changes that are needed to get a certain probabilistic query of interest.
 #'
 #' @section Co-variation schemes:
 #' The available co-variation schemes are:
 #'  \itemize{
 #'   \item \emph{Uniform co-variation scheme} (\code{\link{uniform_covar}}): distributes the probability mass to be co-varied uniformly among the co-varying parameters.
 #'   \item \emph{Proportional co-variation scheme} (\code{\link{proportional_covar}}): distributes the probability mass to be co-varied in the same proportion as in the original Bayesian network.
-#'   \item \emph{Order-preserving co-variation scheme} (\code{\link{orderp_covar}}):distributes the probability mass to be co-varied among the co-varying parameters so that the original order of parameters is preserved.
+#'   \item \emph{Order-preserving co-variation scheme} (\code{\link{orderp_covar}}):distributes the to be co-varied probability mass among the co-varying parameters so that the original order of parameters is preserved.
 #' }
 #' @section Dissimilarity measures:
 #' The dissimilarity measures quantify the difference between a Bayesian network and its update after parameter variation.\cr

@@ -13,7 +13,7 @@ proportional_covar(bnfit, node, value_node, value_parents, new_value)
 
 \item{value_node}{character string. Level of \code{node}.}
 
-\item{value_parents}{character string. Levels of \code{node}'s parents. The levels should be defined for the parents in the order found in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.}
+\item{value_parents}{character string. Levels of \code{node}'s parents. The levels should be defined according to the order of the parents in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.}
 
 \item{new_value}{numeric value between 0 and 1. Value to which the parameter should be updated.}
 }

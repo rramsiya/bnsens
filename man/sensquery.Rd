@@ -14,7 +14,7 @@ sensquery(bnfit, interest_node, interest_node_value, new_value,
 
 \item{interest_node_value}{character string. Level of \code{interest_node}}
 
-\item{new_value}{numeric vector with elements between 0 and 1. Values to which the probability is updated updated.}
+\item{new_value}{numeric value between 0 and 1. Value of the probability of interest.}
 
 \item{evidence_nodes}{character string. Evidence nodes. If \code{NULL} no evidence is considerated. Set by default to \code{NULL}.}
 

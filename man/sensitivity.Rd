@@ -23,9 +23,9 @@ sensitivity(bnfit, interest_node, interest_node_value,
 
 \item{value_node}{character string. Level of \code{node}.}
 
-\item{value_parents}{character string. Levels of \code{node}'s parents. The levels should be defined for the parents in the order found in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.}
+\item{value_parents}{character string. Levels of \code{node}'s parents. The levels should be defined according to the order of the parents in \code{bnfit[[node]][["parents"]]}. If \code{node} has no parents, then should be set to \code{NULL}.}
 
-\item{new_value}{numeric vector with elements between 0 and 1. Values to which the parameter should be updated. It can take a specific value or more than one. In the case in which more than one value are being defined, the vector should have an increasing order of the elements. \code{new_value} can take also as value the character string \code{all}. If \code{all}, a sequence of possible parameter changes ranging from 0.05 to 0.95 will be considered.}
+\item{new_value}{numeric vector with elements between 0 and 1. Values to which the parameter should be updated. It can take a specific value or more than one. In the case in which the user wants to consider more than one value,these should be defined through a vector with an increasing order of the elements. \code{new_value} can also take as value the character string \code{all}: in this case a sequence of possible parameter changes ranging from 0.05 to 0.95 will be considered.}
 
 \item{covariation}{character string. Covariation scheme to be used for the updated Bayesian network. Can take values \code{uniform}, \code{proportional}, \code{orderp}, \code{all}.If equal to \code{all}, uniform, proportional and order-preserving co-variation schemes will be considered. Set by default to \code{proportional}.}
 
