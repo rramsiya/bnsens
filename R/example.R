@@ -1,6 +1,6 @@
 #' Example of Bayesian network
 #'
-#'\code{example} is a bn.fit object explaining a simple Bayesian network involving three variables.
+#'\code{example} is a bn.fit object for a simple Bayesian network involving three variables.
 #'
 #' @docType data
 #'

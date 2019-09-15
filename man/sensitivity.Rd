@@ -34,7 +34,7 @@ sensitivity(bnfit, interest_node, interest_node_value,
 \item{...}{additional parameters to be added to the plot.}
 }
 \description{
-\code{sensitivity} returns the sensitivity function for a probabilistic query of interest with respect to parameter change
+\code{sensitivity} returns the sensitivity function for a probabilistic query of interest with respect to a parameter change defined by the user.
 }
 \details{
 \cr

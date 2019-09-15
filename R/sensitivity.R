@@ -1,6 +1,6 @@
 #' Sensitivity function
 #'
-#' \code{sensitivity} returns the sensitivity function for a probabilistic query of interest with respect to parameter change
+#' \code{sensitivity} returns the sensitivity function for a probabilistic query of interest with respect to a parameter change defined by the user.
 #'
 #' \cr
 #' The Bayesian network on which parameter variation is being conducted should be expressed as a bn.fit object.

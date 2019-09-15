@@ -16,12 +16,12 @@ sensquery(bnfit, interest_node, interest_node_value, new_value,
 
 \item{new_value}{numeric value between 0 and 1. Value of the probability of interest.}
 
-\item{evidence_nodes}{character string. Evidence nodes. If \code{NULL} no evidence is considerated. Set by default to \code{NULL}.}
+\item{evidence_nodes}{character string. Evidence nodes. Set by default to \code{NULL}.}
 
 \item{evidence_states}{character string. Levels of \code{evidence_nodes}. If \code{NULL} no evidence is considerated. If \code{evidence_nodes="NULL"}, \code{evidence_states} should be set to \code{NULL}. Set by default to \code{NULL}.}
 }
 \description{
-\code{sensquery} returns for a given probability of interest the parameters changes that make it possible and the following CD distances.
+\code{sensquery} returns for a given probability of interest the parameters changes that make it possible and the resulting CD distances.
 }
 \details{
 \cr

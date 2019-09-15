@@ -17,6 +17,6 @@ Manuele Leonelli, Eva Riccomagno (2018).A geometric characterisation of sensitiv
 data(example)
 }
 \description{
-\code{example} is a bn.fit object explaining a simple Bayesian network involving three variables.
+\code{example} is a bn.fit object for a simple Bayesian network involving three variables.
 }
 \keyword{BNs}
