@@ -15,4 +15,4 @@
 #'
 #'@keywords BNs
 #'@source	 Manuele Leonelli, Eva Riccomagno (2018).A geometric characterisation of sensitivity analysis in monomial models. \url{https://arxiv.org/abs/1901.02058}
-"example"
+"bnsens_example"
