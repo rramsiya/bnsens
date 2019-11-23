@@ -13,6 +13,9 @@
   \item \bold{Leaving}: two level-factor with levels \emph{TRUE} and \emph{FALSE}. Indicates if the building is being evacuated or not.
   \item \bold{Report}: two level-factor with levels \emph{TRUE} and \emph{FALSE}. Indicates if the incident has been reported or not.
 }}
+\source{
+Hei Chan, Adnan Darwiche (2002). "When do numbers really matter?". Journal of Articial Intelligence Research 17 (265-287).
+}
 \usage{
 data(fire_alarm)
 }

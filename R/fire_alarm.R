@@ -17,4 +17,5 @@
 #' }
 #'
 #' @keywords BNs
+#' @source Hei Chan, Adnan Darwiche (2002). "When do numbers really matter?". Journal of Articial Intelligence Research 17 (265-287).
 "fire_alarm"

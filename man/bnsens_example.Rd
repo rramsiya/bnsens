@@ -11,7 +11,7 @@
   \item \bold{y3}:  three-level factor with levels \emph{1}, \emph{2}, \emph{3}.
 }}
 \source{
-Manuele Leonelli, Eva Riccomagno (2018).A geometric characterisation of sensitivity analysis in monomial models. \url{https://arxiv.org/abs/1901.02058}
+Manuele Leonelli, Eva Riccomagno (2018). "A geometric characterisation of sensitivity analysis in monomial models". \url{https://arxiv.org/abs/1901.02058}
 }
 \usage{
 data(bnsens_example)
