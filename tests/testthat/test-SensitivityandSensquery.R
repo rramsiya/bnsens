@@ -14,12 +14,6 @@ test_that("errors for mispecification in sensitivity",{
   expect_error(sensitivity(bnfit = travel,interest_node = "O",interest_node_value = "emp",node = "T",value_node = "car",value_parents = c("emp","big"),new_value = "all",covariation = "uniform",evidence_nodes = "Ag",evidence_states = "young"),"Invalid input for evidence_nodes")
 })
 
-test_that("errors/warnings for order preserving and plot in sensitivity function",{
-  expect_error(sensitivity(bnfit = travel,interest_node = "O",interest_node_value = "emp",node = "T",value_node = "car",value_parents = c("emp","big"),new_value = "all",covariation = "orderp"))
-  expect_warning(sensitivity(bnfit = travel,interest_node = "O",interest_node_value = "emp",node = "T",value_node = "car",value_parents = c("emp","big"),new_value = "all",covariation = "all"))
-  expect_warning(sensitivity(bnfit = travel,interest_node = "O",interest_node_value = "emp",evidence_nodes = "R",evidence_states = "big",node = "R",value_node = "small",value_parents = "high",new_value = seq(0.55,0.95,0.05),covariation = "orderp"),"The plot won't be showed since all the values are not possible")
-  })
-
 test_that("Correct class and output sensquery",{
   expect_that(sensquery(bnfit = fire_alarm,interest_node = "Report",interest_node_value = "TRUE",new_value = 0.3,evidence_nodes = "Alarm",evidence_states = "TRUE"),is_a("data.frame"))
   expect_equal(sensquery(bnfit = fire_alarm,interest_node = "Report",interest_node_value = "TRUE",new_value = 0.3,evidence_nodes = "Alarm",evidence_states = "TRUE")[,5],c(0.339545,0.391892),tolerance=0.001)

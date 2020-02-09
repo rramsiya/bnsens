@@ -15,13 +15,6 @@ test_that("error/warning with order preserving scheme", {
   expect_warning(KL(bnfit = travel,node = "T",value_node = "car",value_parents = c("emp","big"),new_value = "all",covariation = "all"))
   })
 
-test_that("error/warnings for plots margins or existence", {
-  expect_warning(expect_error(CD_distance(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = seq(0.50,0.95,0.05),covariation = "orderp")))
-  expect_warning(CD_distance(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = seq(0.55,0.95,0.05),covariation = "orderp"),"The plot won't be showed since all the values are not possible")
-  expect_warning(expect_error(KL(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = seq(0.50,0.95,0.05),covariation = "orderp")))
-  expect_warning(KL(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = seq(0.55,0.95,0.05),covariation = "orderp"),"The plot won't be showed since all the values are not possible")
-  })
-
 test_that("Number of outputs CD_distance",{
   expect_equal(nrow(CD_distance(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = "all",covariation = "orderp")$CD),20)
   expect_equal(nrow(CD_distance(bnfit = travel,node = "T",value_node = "train",value_parents = c("emp","big"),new_value = 0.3,covariation = "all")$CD),1)
