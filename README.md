@@ -10,7 +10,3 @@ This project has been realized as my Bachelor thesis in Statistics at University
 Thesis Advisor: Manuele Leonelli<br/>
 Thesis title: Developing a package for sensitivity analysis in Bayesian Networks<br/>
 Contacts: Ramsiya Ramanathan - ramsiya.ramanathan@studio.unibo.it
-
-
-
-------------------------------------------------------------
